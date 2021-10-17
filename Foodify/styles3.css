@@ -1,0 +1,52 @@
+ul {
+  line-height: 40px;
+  display: flex;
+
+  list-style-type: none;
+}
+
+li {
+  margin: 0px;
+  padding-right: 40px;
+}
+
+.showcase {
+  width: 100%;
+  height: 400px;
+}
+
+.showcase img {
+  display: inline-flex;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.cardContainer {
+  /* Add shadows to create the "card" effect */
+  margin: auto;
+  display: grid;
+  
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  transition: 0.3s;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  grid-template-columns: 150px 150px 150px;
+  grid-gap: 18px;
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardContainer:hover {
+  box-shadow: 2px 8px 30px 3px rgba(0, 0, 0, 0.2);
+}

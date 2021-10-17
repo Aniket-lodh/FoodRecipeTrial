@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Foodify</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav>
+        <div class="primarylogo"><img src="./images/primarylogo.png" /></div>
+        <div class="lists">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#orders">Orders</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <div class="showcase">
+        <img
+          src="https://images.pexels.com/photos/8753672/pexels-photo-8753672.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+          alt="Showcase"
+        />
+      </div>
+
+      <h1 id="orders">Recommended for you</h1>
+
+      <div class="cardContainer">
+        <div class="card" onclick="location.href='./placeOrder.html';">
+          <img
+            src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+          </div>
+        </div>
+
+        <div class="card" onclick="location.href='./placeOrder.html';">
+          <img
+            src="https://images.pexels.com/photos/2134165/pexels-photo-2134165.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Engineer</p>
+          </div>
+        </div>
+
+        <div class="card" onclick="location.href='./placeOrder.html';">
+          <img
+            src="https://images.pexels.com/photos/3669501/pexels-photo-3669501.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>Jenny Doe</b></h4>
+            <p>Web Designer</p>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="orderButton">
+        <a href="./orders.html">Order Now</a>
+      </button>
+
+      <div id="clients" class="contactform">
+        <div class="contactDetails">
+          <form
+            action="mailto:aniket.lodh.08@gmail.com?body=Message"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <label for="fname">First name:</label>
+            <input type="text" id="f1name" /><br /><br />
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" /><br /><br />
+            <textarea
+              id="w3review"
+              name="Message"
+              rows="4"
+              cols="33"
+            ></textarea>
+            <br /><br />
+            <input class="ContactButton" type="submit" value="Get in Touch" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="goTop"><a class="to-top" href="#">Back to top</a></div>
+  </body>
+</html>
